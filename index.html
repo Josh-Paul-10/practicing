@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html> 
+<head><title>My first project</title>
+    <link rel ="icon" type = "image/png" href="welcome.png">
+</head>
+<body>
+    <h1>    This is an h1 heading</h1>
+    <hr>
+    <h2>    This is an h2 heading</h2>
+    <p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro ut soluta, magni quia dignissimos, ex doloribus laboriosam quod, ab molestiae nam? Officiis sunt ipsum laudantium pariatur tenetur possimus veniam.
+        <br>
+    </p>
+    <a href="https://www.google.com" target = "blank "
+    title = "goes to Google">Google</a>
+    <br>
+    <hr>
+    <a href="mailto:gamepride@gmail.com" title = "ping me">Email me</a>
+<!-- this is a comment -->
+ <br>
+ <a href="https://www.google.com" target="blank" >
+<img src = "welcome.png" alt = "loading screen" height="100px" >
+</a>
+<br>
+<p> abin sunil audio</p>
+<audio controls muted > 
+    <source src ="aud.ogg"> </audio>
+    <br>
+    <video src="video.mp4"  controls autoplay muted></video>
+<!-- unorderd list -->
+ <h4>groceries</h4>
+<ul>
+    <li>milk</li>
+    <li>eggs</li>
+    <li>bread</li>
+    <ul>
+        <li>white</li>
+        <li>brown</li>
+    </ul>
+    </ul>
+    <!-- ordered list-->
+    <h4>to do</h4>
+    <od>
+        <li>eat breakfast</li>
+        <li>go to work</li>
+    </od>
+<!-- description list -->
+<h4>mythical creature</h4>
+<dl style = background-color:lightblue>
+    <dt>dragon </dt>
+    <dd> a mythical creature</dd>
+    <dt>unicorn</dt>
+    <dd>magical creature</dd>
+</dl>
+
+
+
+
+
+<h3>store hours</h3>
+<table border="1" width="50%" style = "background-color:cyan;">
+    <tr align="center" style = "background-color:rgb(211, 103, 133);">
+        <th>Monday </th>
+        <th>Tuseday</th>
+        <th>Wedbesday</th>
+        <th>Thursday</th>
+        <th>friday</th>
+        <th>saturday</th>
+        <th>sunday</th>
+    </tr>
+    <tr align="center" style = "background-color:aliceblue;">
+<td>closed</td>
+<td>9-10</td>
+<td>8-10</td>
+<td>1-17</td>
+<td>1-8</td>
+<td>1-8</td>
+<td>1-8</td>
+    </tr>
+</table>
+<br>
+
+
+
+
+
+<a href = "https://www.google.com" title = "goes to google" target = "blank">
+<button style = "font-size: x-small; background-color: green; border-radius: 50%;">click me</button>
+</a>
+<p id = "greeting" >jelo</p>
+<button onclick="myFunction()">correct me</button>
+<script>
+    function myFunction(){
+        document.getElementById("greeting").innerHTML = "hello";
+        }
+</script>
+<!-- form -->
+ <!-- GET for insensitive data-->
+    <!-- POST for sensitive data-->
+
+
+
+
+
+
+
+
+
+    <form action = "index.php" method = "POST">
+        <!-- if you want to add large files add an enctype attribute eg; enctype = "multipart/form-data" to the form -->
+<label for = "username">username</label>
+<input type = "text" id = "username" placeholder = "Spongebob" required>
+<!--placeholder is used for suggesting the format in a watermark-->
+<br>
+<label for ="password">password</label>
+
+<input type = "password" id = "password" required>  
+<br>
+<label for = "phone">phone</label>
+<input type = "tel" id = "phone" placeholder = "+91-1234567890" pattern="\+[0-9]{2}-[0-9]{9}" required>
+<!--\ add this sign to special characters-->
+<br>
+<label for = "title">title</label>
+
+<label for = "mr.">mr.</label>
+<input type = "radio" id = "mr." name = "title" value = "mr." required>
+
+<label for = "ms.">ms.</label>
+<input type = "radio" id = "ms." name = "title" value = "ms." required>
+<br>
+<label for = "payment">payment</label>
+<select id = "payment" required>
+    <option value = "debit">debit</option>
+    <option value = "credit">credit</option>
+    <option value = "cash">cash</option>
+</select>
+<br>
+
+<input type = "checkbox" id = "terms" required>
+<label for = "terms">I agree to the terms and conditions</label>
+
+
+<br>
+<label for = "comment">comment</label>
+<textarea id = "comment" rows = "4" cols = "50" placeholder = "enter your comment here" required></textarea>
+
+<label for="file">File</label>
+<input type = "file" id = "file" accept="image/*">
+
+<input type = "submit">
+
+<input type = "reset">
+</form>
+
+
+
+
+</body>
+</html>
